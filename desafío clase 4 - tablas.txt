@@ -1,0 +1,67 @@
+CUENTA
+id (PK)
+cuil_cliente (FK)
+fecha_alta
+isProveedor
+saldo
+activo
+
+PAGO
+id (PK)
+id_cliente (FK)
+id_proveedor (FK)
+fecha_pago
+monto
+activo
+
+PEDIDO
+id (PK)
+id_presupuesto (FK)
+id_cliente (FK)
+fecha
+activo
+
+CLIENTE
+cuil (PK)
+razon_social
+nombre_titular
+email
+direccion
+telefono
+activo
+
+PRESUPUESTO
+id (PK)
+id_cliente (FK)
+articulos
+activo
+
+ITEM_PRESUPUESTO
+id (PK)
+id_presupuesto (FK)
+id_articulo
+cantidad
+precio
+
+ARTICULO
+id(PK)
+descripcion
+stock
+cantidad_por_bulto
+costo
+precio_venta
+id_categoría
+activo
+
+CATEGORIA
+id (PK)
+nombre
+activo
+
+PROVEEDOR
+id(PK)
+razon_social
+email
+telefono
+direccion
+activo

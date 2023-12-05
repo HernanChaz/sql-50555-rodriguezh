@@ -1,0 +1,7 @@
+Tema:
+
+Base de datos para empresa de ventas de insumos de ferretería
+
+Entidades potenciales:
+
+Cliente, Pedido, Producto, Proveedor, Venta, Remito, Factura, Lista de precios, Presupuesto
